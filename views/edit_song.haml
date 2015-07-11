@@ -1,0 +1,4 @@
+%h1 Edit Song
+%form{action: "/songs/#{@song.id}", method: "POST"}
+  %input{type: "hidden", name: "_method", value: "PUT"}
+  = haml :song_form
